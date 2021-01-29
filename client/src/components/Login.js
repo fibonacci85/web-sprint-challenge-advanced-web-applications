@@ -25,7 +25,7 @@ class Login extends React.Component {
         .then(res => {
           console.log(res)
           localStorage.setItem("token", res.data.payload);
-          // this.props.history.push('')
+          this.props.history.push('/bubbles') // protected
         })
         .catch(err => {
           console.log(err)
@@ -39,7 +39,6 @@ class Login extends React.Component {
   return (
     <>
       <h1>Welcome to the Bubble App!</h1>
-<<<<<<< HEAD
       <form onSubmit={this.login}>
         <input
         type="text"
@@ -57,11 +56,6 @@ class Login extends React.Component {
          />
         <button>Login</button>
       </form>
-=======
-      <input />
-      <input />
-      <button>Submit</button>
->>>>>>> 691e2892d60384507f46cbc1b926adcbc8a0f71d
     </>
   );
 };
