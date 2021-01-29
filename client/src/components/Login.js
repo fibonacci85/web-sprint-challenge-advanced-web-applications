@@ -39,6 +39,7 @@ class Login extends React.Component {
   return (
     <>
       <h1>Welcome to the Bubble App!</h1>
+<<<<<<< HEAD
       <form onSubmit={this.login}>
         <input
         type="text"
@@ -56,6 +57,11 @@ class Login extends React.Component {
          />
         <button>Login</button>
       </form>
+=======
+      <input />
+      <input />
+      <button>Submit</button>
+>>>>>>> 691e2892d60384507f46cbc1b926adcbc8a0f71d
     </>
   );
 };
