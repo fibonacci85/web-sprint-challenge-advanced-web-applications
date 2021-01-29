@@ -9,7 +9,7 @@ const BubblePage = () => {
   const [colorList, setColorList] = useState([]);
   // fetch your colors data from the server when the component mounts
   // set that data to the colorList state property
-  const params = useParams();
+  // const params = useParams();
 
   const fetchColors = () => {
     axiosWithAuth()
@@ -22,8 +22,8 @@ const BubblePage = () => {
   };
 
   useEffect(() => {
-    fetchColors(params.id)
-  }, [params.id]);
+    fetchColors()
+  }, []);
 
   if (!colorList) {
     return <div>Loading color info...</div>
